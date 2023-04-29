@@ -1,0 +1,25 @@
+var NFT = []
+function icyNFT (name, eye_color, shirt_type, bling, bgColor) {
+  const NFTqq = {
+  "Name" : name,
+  "eyeColor" : eye_color,
+  "shirtType" : shirt_type,
+    "bling" : bling,
+    "backgroundColor": bgColor,
+    }
+   NFT.push(NFTqq);
+  console.log("icy " + name)
+}
+//function list will list all the contents
+function list() {
+  for (i = 0; i < NFT.length ; i++ ){
+    console.log(NFT[i])
+  }
+}
+// tells the number of NFTs created
+function forGoodMeasure() {
+ console.log(NFT.length);
+}
+icyNFT("Traq", "Purple", "Space Suit", "Knife stabbed", "Yellow")
+list();
+forGoodMeasure()
